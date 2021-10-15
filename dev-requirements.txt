@@ -1,0 +1,4 @@
+git+https://github.com/python/mypy.git@master
+pyspark~=3.1
+pytest
+pytest-mypy-plugins
