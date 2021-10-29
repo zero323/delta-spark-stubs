@@ -13,9 +13,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-from pyspark.sql import SparkSession
-
-def configure_spark_with_delta_pip(
-    spark_session_builder: SparkSession.Builder,
-) -> SparkSession.Builder: ...

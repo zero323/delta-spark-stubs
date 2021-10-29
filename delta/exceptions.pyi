@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+from py4j.java_gateway import JVMView as JVMView, JavaObject as JavaObject  # type: ignore[import]
 from pyspark.sql.utils import CapturedException
 
 class DeltaConcurrentModificationException(CapturedException): ...

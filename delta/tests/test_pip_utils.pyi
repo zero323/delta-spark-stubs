@@ -14,8 +14,13 @@
 # limitations under the License.
 #
 
-from pyspark.sql import SparkSession
+import unittest
+from typing import Any
 
-def configure_spark_with_delta_pip(
-    spark_session_builder: SparkSession.Builder,
-) -> SparkSession.Builder: ...
+class PipUtilsTests(unittest.TestCase):
+    spark: Any
+    tempPath: Any
+    tempFile: Any
+    def setUp(self) -> None: ...
+    def tearDown(self) -> None: ...
+    def test_maven_jar_loaded(self) -> None: ...

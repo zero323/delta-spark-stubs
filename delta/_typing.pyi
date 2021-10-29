@@ -14,8 +14,10 @@
 # limitations under the License.
 #
 
-from pyspark.sql import SparkSession
+from pyspark.sql.column import Column
+from typing import Dict, Optional, Union
 
-def configure_spark_with_delta_pip(
-    spark_session_builder: SparkSession.Builder,
-) -> SparkSession.Builder: ...
+ExpressionOrColumn = Union[str, Column]
+OptionalExpressionOrColumn = Optional[ExpressionOrColumn]
+ColumnMapping = Dict[str, ExpressionOrColumn]
+OptionalColumnMapping = Optional[ColumnMapping]
