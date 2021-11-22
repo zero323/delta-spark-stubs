@@ -7,6 +7,10 @@
 
 Experimental type hints for [delta-spark](https://pypi.org/project/delta-spark/) package.
 
+## Note
+
+Merged into delta in [bc3ec0d](https://github.com/delta-io/delta/commit/bc3ec0da2cd5e2ff493b7a5e328311492801155f)
+
 ## Installation
 
 ```bash
